@@ -1,7 +1,8 @@
 import './App.css';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import LoginPage from './pages/LoginPage';
-
+import SignupPage from './pages/SignupPage';
+import Signup2Page from './pages/Signup2page';
 
 const darkTheme = {
   headerBackground: "#2E2E2E",
@@ -48,7 +49,7 @@ body {
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
-      <LoginPage />
+      <Signup2Page />
       
     </ThemeProvider>
   );
