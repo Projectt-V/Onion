@@ -1,25 +1,27 @@
 import React from 'react';
 import LoginHeader from '../components/LoginHeader';
-import PrimaryButton from '../components/PrimaryButton';
+import Button from '../components/Button';
 import TextField from '../components/TextField';
-import { LoginScreen, LoginBody, LoginContainer, WidthFixer, TextDiv, ForgotPass } from '../styles/LoginPageStyle';
+import { LoginScreen, LoginBody, LoginContainer, TextDiv, WidthFixer, ForgotPass } from '../styles/LoginPageStyle';
 import { LoginSignupHeader } from '../styles/HeadingFonts';
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import Logo from '../components/Logo';
+
 
 
 //NAVIGATION IMPORTS
 
-//import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 //AAGATHU....
 
 function LoginPage() {
     const iconStyle = {
         color: "#fff",
-        fontSize: "35px",
-        marginTop: "7px",
-        justifyContent: "flex-start"
+        fontSize: "25px",
+        justifyContent: "flex-start",
+        fontFamily: "'Work Sans', sans-serif"
     }
     return (
 
@@ -27,11 +29,7 @@ function LoginPage() {
             <LoginHeader />
             <LoginBody>
                 <LoginContainer>
-                    <LoginSignupHeader>Onion</LoginSignupHeader>
-                    <WidthFixer>
-                        <PrimaryButton text="LOGIN" isActive={true} />
-                        <PrimaryButton text="SIGN UP" isActive={false} />
-                    </WidthFixer>
+                    <LoginSignupHeader>Login For <br/> <Logo width="200px" height="80px" /></LoginSignupHeader>
                     <TextDiv>
                         <PersonOutlineOutlinedIcon style={iconStyle} />
                         <TextField type={"text"} placeholder={"Username"} />
@@ -42,7 +40,10 @@ function LoginPage() {
                     </TextDiv>
                     <ForgotPass>Forgot Password?</ForgotPass>
                     <WidthFixer>
-                        <PrimaryButton text="LOGIN" isActive={true} />
+                        <Button text="Login" isPrimary={true} />
+                    </WidthFixer>
+                    <WidthFixer>
+                        <Button deptext1="Don't have an account?" depText2="Sign up" isPrimary={false} />
                     </WidthFixer>
                 </LoginContainer>
             </LoginBody>

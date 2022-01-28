@@ -5,7 +5,7 @@ function TextField(props) {
       width: "100%",
       height: "100%",
       backgroundColor: "transparent",
-      fontSize: "24px",
+      fontSize: "15px",
       color: "#fff",
       outline: "none",
       border: "none",
