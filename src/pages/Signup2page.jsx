@@ -6,7 +6,8 @@ import Button from '@material-ui/core/Button';
 import SignupPage from './SignupPage';
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import { useHistory } from 'react-router-dom';
+ 
 
 
 function Signup2Page() {
@@ -14,6 +15,7 @@ function Signup2Page() {
         Aos.init({ duration: 2000 });
      }, []);
 
+    const history = useHistory();
 
   return (
  
@@ -34,8 +36,7 @@ function Signup2Page() {
                         <TextField type={"password"} placeholder={""} />
                     </TextDiv>
                     <SignupBtn>
-                      <Button variant="contained" color="secondary">continue</Button>
-                     
+                      <Button variant="contained" color="secondary" onClick={ () => history.push("/home") } >continue</Button>
                     </SignupBtn>  
                     </div>
                  </SignupBox>  

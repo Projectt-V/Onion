@@ -7,14 +7,9 @@ import { LoginSignupHeader } from '../styles/HeadingFonts';
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Logo from '../components/Logo';
+import { useHistory } from 'react-router-dom';
 
 
-
-//NAVIGATION IMPORTS
-
-
-
-//AAGATHU....
 
 function LoginPage() {
     const iconStyle = {
@@ -22,7 +17,10 @@ function LoginPage() {
         fontSize: "25px",
         justifyContent: "flex-start",
         fontFamily: "'Work Sans', sans-serif"
-    }
+    };
+
+    const history = useHistory();
+
     return (
 
         <LoginScreen>
@@ -39,10 +37,10 @@ function LoginPage() {
                         <TextField type={"password"} placeholder={"Password"} />
                     </TextDiv>
                     <ForgotPass>Forgot Password?</ForgotPass>
-                    <WidthFixer>
+                    <WidthFixer  onClick={ () => history.push("/home") }>
                         <Button text="Login" isPrimary={true} />
                     </WidthFixer>
-                    <WidthFixer>
+                    <WidthFixer onClick={ () => history.push("/signup") } >
                         <Button deptext1="Don't have an account?" depText2="Sign up" isPrimary={false} />
                     </WidthFixer>
                 </LoginContainer>

@@ -1,21 +1,6 @@
 import './App.css';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-<<<<<<< HEAD
 import Navigation from './Navigation';
-
-import LoginPage from './pages/LoginPage';
-import SignupPage from './pages/SignupPage';
-import Signup2Page from './pages/Signup2page';
-=======
-<<<<<<< HEAD
-import Navigation from './Navigation';
-
-=======
-import LoginPage from './pages/LoginPage';
-import SignupPage from './pages/SignupPage';
-import Signup2Page from './pages/Signup2page';
->>>>>>> 5f41c596236afe9081b82d8ffbdc69b1478adff2
->>>>>>> loginpage
 
 const darkTheme = {
   headerBackground: "#2E2E2E",
@@ -62,18 +47,7 @@ body {
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
-<<<<<<< HEAD
       <Navigation />
-      <Signup2Page />
-      
-=======
-<<<<<<< HEAD
-      <Navigation />
-=======
-      <Signup2Page />
-      
->>>>>>> 5f41c596236afe9081b82d8ffbdc69b1478adff2
->>>>>>> loginpage
     </ThemeProvider>
   );
 }
