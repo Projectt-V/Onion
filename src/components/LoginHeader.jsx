@@ -1,10 +1,12 @@
 import React from 'react';
 import { HeaderContainer, Icon } from '../styles/Header';
+import Logo from './Logo';
 
 function Header() {
+
   return(
       <HeaderContainer>
-          <Icon>Onion</Icon>
+         <Logo width="150px" height="60px" />
       </HeaderContainer>
   )
 }

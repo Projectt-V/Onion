@@ -12,6 +12,11 @@ code {
     monospace;
    
 }
+
+
+::placeholder{
+  color: #999999;
+}
 ::placeholder{
   font-size: 14px;
   color:white;

@@ -26,13 +26,14 @@ export const LoginContainer = styled.div`
    top: 13vh;
    left: 30vw;
    text-align: center;
-   color: ${ (props) => props.theme.loginHeader }
+   color: ${ (props) => props.theme.loginHeader };
+   box-shadow: 0 32px 16px rgba(0,0,0,0.21);;
 `;
 
 export const WidthFixer = styled.div`  
-   margin-top: 40px;
+   margin-top: 30px;
    width: 100%;
-   height: 50px;
+   height: 40px;
    display: flex;
    flex-direction: row:
    flex: auto;
@@ -41,11 +42,11 @@ export const WidthFixer = styled.div`
 
 export const TextDiv = styled.div`
    width: 98%;
-   height: 45px;
-   margin-top: 40px;
+   height: 38px;
+   margin-top: 20px;
    background-color: #616161;
    border-radius: 10px;
-   align-items: initial;
+   align-items: center;
    display: flex;
    padding-left: 10px;
 `;
