@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const LoginScreen = styled.div`
-   height: 100vh;
+   height: 100%;
+   width: 100%;
    display: grid;
    grid-template-rows: 9vh 91vh;
    grid-template-columns: auto;
@@ -11,23 +12,37 @@ export const LoginBody = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: ${ (props) => props.theme.bodyBackground };
+   background-color: ${(props) => props.theme.bodyBackground};
 `;
 
 
 export const LoginContainer = styled.div`
    background-color: #474747;
    width: 28vw;
-   margin-left: 10px;
    padding: 3vw;
    align-items: center;
    border-radius: 10px;
-   position: absolute;
-   top: 13vh;
-   left: 30vw;
-   text-align: center;
-   color: ${ (props) => props.theme.loginHeader };
+   text-align: center;  
+   color: ${(props) => props.theme.loginHeader};
    box-shadow: 0 32px 16px rgba(0,0,0,0.21);;
+
+
+   @media (max-width: 425px) {
+      width: 90vw;
+      margin-left: 0px;
+    }
+
+    @media (max-height: 550px) {
+       height: 40vh;
+    }
+
+    
+   @media (min-width: 426px) and (max-width: 768px) {
+      width: 60vw;
+      top: 0px
+      left: 0px;
+      margin-left: 0px;
+    }
 `;
 
 export const WidthFixer = styled.div`  
@@ -60,4 +75,13 @@ export const ForgotPass = styled.div`
    justify-content: flex-end;
    cursor: pointer;
    margin-left: 70%;
+
+   @media (max-width: 425px) {
+      font-size: 9px;
+    }
+
+    
+   @media (min-width: 426px) and (max-width: 768px) {
+      font-size: 10px;
+    }
 `;
