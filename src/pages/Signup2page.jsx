@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 
 function Signup2Page() {
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 1000 });
      }, []);
 
 
@@ -23,8 +23,8 @@ function Signup2Page() {
            <SignupHeader/>  
               <SignupContainer>
                
-                <SignupBox data-aos="fade-up" data-aos-delay="1000">
-                    <div data-aos="fade-up" data-aos-delay="1900">
+                <SignupBox data-aos="fade-up" data-aos-delay="100">
+                    <div data-aos="fade-up" data-aos-delay="900">
                     <Label>Password</Label>
                     <TextDiv>
                         <TextField type={"password"} placeholder={""} />
