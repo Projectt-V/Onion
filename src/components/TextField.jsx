@@ -6,10 +6,12 @@ function TextField(props) {
       height: "100%",
       backgroundColor: "transparent",
       fontSize: "15px",
+      fontSize: "14px",
       color: "#fff",
       outline: "none",
       border: "none",
-      paddingLeft: "10px"
+      paddingLeft: "10px",
+      
   }
   return(
      <input type={props.type} placeholder = {props.placeholder} style={textStyle} color={"#fff"} />

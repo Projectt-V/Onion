@@ -2,6 +2,9 @@ import './App.css';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Navigation from './Navigation';
 
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
+import Signup2Page from './pages/Signup2page';
 
 const darkTheme = {
   headerBackground: "#2E2E2E",
@@ -49,6 +52,8 @@ body {
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
       <Navigation />
+      <Signup2Page />
+      
     </ThemeProvider>
   );
 }
