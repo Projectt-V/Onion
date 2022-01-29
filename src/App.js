@@ -1,8 +1,6 @@
 import './App.css';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import LoginPage from './pages/LoginPage';
-import SignupPage from './pages/SignupPage';
-import Signup2Page from './pages/Signup2page';
+import Navigation from './Navigation';
 
 const darkTheme = {
   headerBackground: "#2E2E2E",
@@ -11,8 +9,8 @@ const darkTheme = {
   loginHeader: "FEFEFE",
   buttonTextActive: "#fff",
   buttonTextInActive: "#D0D0D0",
-  buttonBackgroundActive: "#FF3093",
-  buttonBackgroundInActive: "#616161",
+  buttonBackgroundPrimary: "linear-gradient(225deg, #F16648, #C1005B)",
+  buttonBackgroundSecondary: "linear-gradient(225deg, #9C2441, #53506D)",
 };
 
 
@@ -49,8 +47,7 @@ body {
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
-      <Signup2Page />
-      
+      <Navigation />
     </ThemeProvider>
   );
 }
