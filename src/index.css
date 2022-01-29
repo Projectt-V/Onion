@@ -10,8 +10,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+   
 }
+<<<<<<< HEAD
 
 ::placeholder{
   color: #999999;
 }
+=======
+::placeholder{
+  font-size: 14px;
+  color:white;
+}
+>>>>>>> 5f41c596236afe9081b82d8ffbdc69b1478adff2
