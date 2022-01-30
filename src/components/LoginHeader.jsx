@@ -1,8 +1,8 @@
 import React from 'react';
-import { HeaderContainer, Icon } from '../styles/Header';
+import { HeaderContainer, Icon } from '../styles/LoginHeaderStyle';
 import Logo from './Logo';
 
-function Header() {
+function LoginHeader() {
 
   return(
       <HeaderContainer>
@@ -11,4 +11,4 @@ function Header() {
   )
 }
 
-export default Header;
+export default LoginHeader;
