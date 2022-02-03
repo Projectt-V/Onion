@@ -20,13 +20,13 @@ function Signup2Page() {
   return (
  
        <SignupScreen>
-           <SignupBackgroud data-aos="fade-down" data-aos-delay="0">
+           <SignupBackgroud>
            
            <SignupHeader/>  
               <SignupContainer>
                
                 <SignupBox data-aos="fade-up" data-aos-delay="100">
-                    <div data-aos="fade-up" data-aos-delay="900">
+                    <div >
                     <Label>Password</Label>
                     <TextDiv>
                         <TextField type={"password"} placeholder={""} />
