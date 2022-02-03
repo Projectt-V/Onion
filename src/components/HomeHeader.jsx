@@ -3,6 +3,11 @@ import { HomeHeaderContainer, SearchBarStyle, HomeHeaderIcons } from '../styles/
 import Logo from '../components/Logo';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import TextField from '../components/TextField';
+import AddBoxRoundedIcon from '@material-ui/icons/AddBoxRounded';
+import Badge from '@material-ui/core/Badge';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import Avatar from '@material-ui/core/Avatar';
+import ExploreIcon from '@material-ui/icons/Explore';
 
 function HomeHeader() {
     const iconStyle = {
@@ -21,7 +26,12 @@ function HomeHeader() {
                 <TextField type={"text"} placeholder={"Type to search"} />
             </SearchBarStyle>
             <HomeHeaderIcons>
-
+                <AddBoxRoundedIcon style={iconStyle}/>
+                <ExploreIcon style={iconStyle}/>
+                <Badge badgeContent={4} color="secondary" >
+                    <NotificationsIcon style={iconStyle}/>
+                </Badge>
+                <Avatar>H</Avatar>
             </HomeHeaderIcons>
         </HomeHeaderContainer>
     );

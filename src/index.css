@@ -30,11 +30,13 @@ code {
 ::-webkit-scrollbar-track {
   background: #666666;
   border-radius: 10px;
+  
 }
 
 ::-webkit-scrollbar-thumb {
   background: #ADADAD;
   border-radius: 10px;
+  
 }
 
 ::-webkit-scrollbar-thumb:hover {

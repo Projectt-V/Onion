@@ -15,8 +15,14 @@ const darkTheme = {
 
 
 const lightTheme = {
-  background: "#fffff",
-  font: "black"
+  fontcolor: "black",
+  loginHeader:"transparent",
+  buttonTextActive: "#fff",
+  headerBackground:"linear-gradient(90deg, #FFC1C8 2.88%, #FF9FA9 51.74%, #FFBFC6 100%)",
+  bodyBackground: "#fff",
+  buttonTextActive: "#fff",
+  buttonTextInActive: "#D0D0D0",
+
 };
 
 

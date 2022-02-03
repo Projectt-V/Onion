@@ -72,7 +72,7 @@ export const Icon1 = styled.h2`
 export const TextDiv = styled.div`
  
    padding:10px;
-   margin-top: 10px;
+   margin-top: 5px;
    border: 2px solid rgba(254, 254, 254, 0.3);
    border-radius: 5px;
    align-items: initial;
