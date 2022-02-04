@@ -28,8 +28,12 @@ export const FeedBody = styled.div`
 export const MessageBody = styled.div`
    width: 100%;
    height: 100%;
-   overflow: auto;
    background: transparent;
+   overflow: auto;
+`;
+export const MessageFeedBody = styled.div`
+   background: transparent;
+   border-right: 2px solid #717272;
    
 `;
 
@@ -90,6 +94,10 @@ export const PostTime = styled.p`
 export const PostImage = styled.div`
    padding-left:2%;
    padding-right:2%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
    
 `;
 export const PostFooter = styled.div`

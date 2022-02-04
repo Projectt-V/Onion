@@ -15,6 +15,7 @@ function Confetii() {
     color: "#fff",
     fontSize: "25px",
     marginRight: "4px",
+    cursor:"pointer",
   };
 
 

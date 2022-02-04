@@ -1,6 +1,7 @@
 import React from 'react';
 import { HomeStyle, HomeBody, FeedBody, MessageBody, StoryDiv, PostDiv, PostHeader, PostProfile, ProfileNameContainer, PostProfileName, PostTime
-, PostImage, PostFooter, PostLikeSection, PostCommentSection, PostCommentViewmore, PostCommentBoxSection, PostCommentBox, PostCommentBoxRight} from '../styles/HomePageStyle';
+, PostImage, PostFooter, PostLikeSection, PostCommentSection, PostCommentViewmore, PostCommentBoxSection, PostCommentBox, PostCommentBoxRight
+, MessageFeedBody} from '../styles/HomePageStyle';
 import HomeHeader from '../components/HomeHeader';
 import Confetti from '../components/Confetti';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
@@ -10,6 +11,8 @@ import CommentIcon from '@material-ui/icons/Comment';
 import PlayForWorkIcon from '@material-ui/icons/PlayForWork';
 import LaunchIcon from '@material-ui/icons/Launch';
 import TextField from '../components/TextField';
+import MessageBox from '../components/MessageBox';
+import MessageBoxHeader from '../components/MessageBoxHeader';
 
 
 function HomePage() {
@@ -83,7 +86,18 @@ function HomePage() {
           </PostDiv>
         </FeedBody>
         <MessageBody>
-        
+            <MessageBoxHeader/>
+            <MessageFeedBody>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+            </MessageFeedBody>
         </MessageBody>
       </HomeBody>
     </HomeStyle>
