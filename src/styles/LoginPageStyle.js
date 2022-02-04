@@ -17,14 +17,14 @@ export const LoginBody = styled.div`
 
 
 export const LoginContainer = styled.div`
-   background-color: #474747;
+   background-color: ${ (props) => props.theme.loginContainerBackground } ;
    width: 28vw;
    padding: 3vw;
    align-items: center;
    border-radius: 10px;
    text-align: center;  
    color: ${(props) => props.theme.loginHeader};
-   box-shadow: 0 32px 16px rgba(0,0,0,0.21);;
+   box-shadow: 0 32px 16px rgba(0,0,0,0.21);
 
 
    @media (max-width: 425px) {
@@ -56,14 +56,22 @@ export const WidthFixer = styled.div`
 `;
 
 export const TextDiv = styled.div`
+   color: #E64E4C;
    width: 98%;
    height: 38px;
    margin-top: 20px;
-   background-color: #616161;
+   background-color: ${ (props) => props.theme.textBoxBackground };
    border-radius: 10px;
    align-items: center;
    display: flex;
    padding-left: 10px;
+
+   ::placeholder{
+      font-size: 14px;
+      color: ${ (props) => props.theme.fontcolor } ;
+    }
+
+
 `;
 
 export const ForgotPass = styled.div`
@@ -84,4 +92,4 @@ export const ForgotPass = styled.div`
    @media (min-width: 426px) and (max-width: 768px) {
       font-size: 10px;
     }
-`;
+`; 

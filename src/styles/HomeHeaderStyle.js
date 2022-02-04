@@ -17,7 +17,7 @@ export const HomeHeaderContainer = styled.div`
 export const SearchBarStyle = styled.div`
   height: 30px;
   width: 40vw;
-  background-color: #353535;
+  background-color: rgba(255,255,255,0.4);
   display: flex;
   align-iitems: center;
   justify-content: center;
