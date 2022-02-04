@@ -1,8 +1,10 @@
 import React from 'react';
+import { useTheme } from 'styled-components';
 
 function TextField(props) {
 
-
+  const theme = useTheme();
+ 
   const textStyle = {
       width: "100%",
       height: "100%",
@@ -11,10 +13,12 @@ function TextField(props) {
       outline: "none",
       border: "none",
       paddingLeft: "10px",
-      color: "black",
+      color: theme.fontcolor
   };
 
 
+
+  
   return(
      <input type={props.type} placeholder = {props.placeholder} style={textStyle} />
   );
