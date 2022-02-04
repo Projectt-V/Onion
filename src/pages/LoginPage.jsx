@@ -11,9 +11,10 @@ import { useHistory } from 'react-router-dom';
 
 
 
-function LoginPage() {
+function LoginPage(props) {
+
+
     const iconStyle = {
-        color: "#fff",
         fontSize: "25px",
         justifyContent: "flex-start",
         fontFamily: "'Work Sans', sans-serif"
