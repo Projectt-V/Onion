@@ -1,6 +1,5 @@
 import React from 'react';
-import { HomeStyle, HomeBody, FeedBody, MessageBody, StoryDiv, PostDiv, PostHeader, PostProfile, ProfileNameContainer, PostProfileName, PostTime
-, PostImage, PostFooter, PostLikeSection, PostCommentSection, PostCommentViewmore, PostCommentBoxSection, PostCommentBox, PostCommentBoxRight} from '../styles/HomePageStyle';
+import { HomeStyle, HomeBody, FeedBody, MessageBody, StoryDiv, MessageFeedBody } from '../styles/HomePageStyle';
 import HomeHeader from '../components/HomeHeader';
 import Confetti from '../components/Confetti';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
@@ -11,30 +10,13 @@ import PlayForWorkIcon from '@material-ui/icons/PlayForWork';
 import LaunchIcon from '@material-ui/icons/Launch';
 import TextField from '../components/TextField';
 import Story from '../components/Story';
+import PostDiv from '../components/PostDiv';
+import MessageBox from '../components/MessageBox';
+import MessageBoxHeader from '../components/MessageBoxHeader';
 
 
 function HomePage() {
   
-  const iconStyle = {
-    color: "#fff",
-    marginRight: "10px",
-  };
-
-  const cmdiconStyle = {
-    color: "#fff",
-    fontSize: "25px",
-    marginRight: "4px",
-  };
-
-  const dpStyle = {
-    height: "40px",
-    width: "40px",
-    borderRadius: "50%",
-  };
-  const postStyle = {
-    width: "100%",
-    height: "90%",
-  }
 
   return (
     <HomeStyle>
@@ -84,9 +66,23 @@ function HomePage() {
                     
                 </PostCommentBoxSection>
           </PostDiv>
+          <StoryDiv></StoryDiv>
+          <PostDiv />
+          <PostDiv />
         </FeedBody>
         <MessageBody>
-        
+            <MessageBoxHeader/>
+            <MessageFeedBody>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+               <MessageBox/>
+            </MessageFeedBody>
         </MessageBody>
       </HomeBody>
     </HomeStyle>

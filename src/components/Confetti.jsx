@@ -12,9 +12,10 @@ function Confetii() {
     setActive(false);
   });
   const cmdiconStyle = {
-    color: "#fff",
+    color: "black",
     fontSize: "25px",
     marginRight: "4px",
+    cursor:"pointer",
   };
 
 
@@ -35,7 +36,7 @@ function Confetii() {
     <div class="confetti-button" >
       <Confetti active={active} config={ config } />
      
-         <Icon icon="ph:confetti" color="#fff" height={30} onClick={() => setActive(true)}/>
+         <Icon icon="ph:confetti" height={30} onClick={() => setActive(true)}/>
      
 
     </div>

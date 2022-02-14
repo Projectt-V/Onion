@@ -3,26 +3,46 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Navigation from './Navigation';
 
 const darkTheme = {
+  fontcolor: "#fff",
   headerBackground: "#2E2E2E",
   bodyBackground: "#393939",
-  fontcolor: "#fff",
-  loginHeader: "FEFEFE",
+  loginContainerBackground: "#474747",
+  loginHeader: "#FEFEFE",
   buttonTextActive: "#fff",
   buttonTextInActive: "#D0D0D0",
   buttonBackgroundPrimary: "linear-gradient(225deg, #F16648, #C1005B)",
   buttonBackgroundSecondary: "linear-gradient(225deg, #9C2441, #53506D)",
-};
+  textBoxBackground: "#616161",
+  messageBodyBackground:"#353535",
+  messageHeaderBackground:"#353535",
+  messageTextColor:"#fff",
+  messageBoxBackground:"#474747",
+  messageBoxBorder:"2px solid #9B9B9B",
+  searchBar:"#353535",
+  messageHeaderFontcolor:"#fff",
+}
 
 
 const lightTheme = {
-  fontcolor: "black",
+  fontcolor: "#050505",
   loginHeader:"transparent",
+  loginContainerBackground: "#fff",
   buttonTextActive: "#fff",
-  headerBackground:"linear-gradient(90deg, #FFC1C8 2.88%, #FF9FA9 51.74%, #FFBFC6 100%)",
+  headerBackground:"#fff",
   bodyBackground: "#fff",
   buttonTextActive: "#fff",
   buttonTextInActive: "#D0D0D0",
-
+  buttonBackgroundPrimary: "linear-gradient(225deg, #F16648, #C1005B)",
+  buttonBackgroundSecondary: "linear-gradient(225deg, #9C2441, #53506D)",
+  textBoxBackground: "#E9E9E9",
+  messageBodyBackground:"#fff",
+  messageBodyBorder:" 0px 4px 16px 10px rgba(45, 45, 45, 0.25)",
+  messageHeaderBackground:"#C1005B",
+  messageBoxBackground:"transparent",
+  messageTextColor:"#000",
+  messageBoxBorder:" ",
+  searchBar:"#E9E9E9",
+  messageHeaderFontcolor:"#fff",
 };
 
 
@@ -51,7 +71,7 @@ body {
 `;
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={lightTheme}>
       <GlobalStyles />
       <Navigation />
     </ThemeProvider>
