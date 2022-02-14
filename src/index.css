@@ -10,14 +10,27 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-   
+  
+ 
 }
 
-
-::placeholder{
-  color: #999999;
+::-webkit-scrollbar {
+  width: 7px;
 }
-::placeholder{
-  font-size: 14px;
-  color:white;
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ADADAD;
+  border-radius: 10px;
+
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #969696;
 }
