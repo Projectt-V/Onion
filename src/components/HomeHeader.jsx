@@ -8,10 +8,12 @@ import Badge from '@material-ui/core/Badge';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Avatar from '@material-ui/core/Avatar';
 import ExploreIcon from '@material-ui/icons/Explore';
+import { useTheme } from 'styled-components';
 
 function HomeHeader() {
+    const theme = useTheme();
     const iconStyle = {
-        color: "#fff",
+        color: theme.fontcolor,
         fontSize: "25px",
         justifyContent: "flex-start",
         fontFamily: "'Work Sans', sans-serif",

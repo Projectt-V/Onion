@@ -4,14 +4,18 @@ import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import { Icon } from '@iconify/react';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Switch from '@material-ui/core/Switch';
+import { useTheme } from 'styled-components';
+
 function MessageBoxHeader() {
+    const theme = useTheme();
     const iconStyle = {
-        color: "#fff",
+        color: theme.messageHeaderFontcolor,
         fontSize: "25px",
         justifyContent: "flex-start",
         fontFamily: "'Work Sans', sans-serif",
         marginTop: "3px",
     };
+    
   return (
         <MessageHeaderContainer>
             <MessageHeaderBody>

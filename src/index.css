@@ -11,25 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
   
-   
+ 
 }
-
-
-::placeholder{
-  color: #999999;
-}
-::placeholder{
-  font-size: 14px;
-  color:white;
-}
-
 
 ::-webkit-scrollbar {
   width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #666666;
+  background: transparent;
   border-radius: 10px;
   
 }
@@ -42,5 +32,5 @@ code {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #545655;
+  background: #969696;
 }

@@ -3,9 +3,11 @@ import styled from 'styled-components';
 export const MessageHeaderContainer = styled.div`
    height: 10vh;
    width:100%;
-   background-color: #353535;
+   background-image:${ (props) => props.theme.messageHeaderBackground};
+   background-color:${ (props) => props.theme.messageHeaderBackground};
    overflow: auto;
-  
+   color:${ (props) => props.theme.messageHeaderFontcolor};
+   
 `;
 export const MessageHeaderBody = styled.div`
    height:100%;
@@ -30,7 +32,7 @@ export const MessageIconSection = styled.div`
 
 `;
 export const Title = styled.h3`
-   color:#fff;
+   color:${ (props) => props.theme.messageHeaderFontcolor};
    font-style: normal;
    font-weight: bold;
    

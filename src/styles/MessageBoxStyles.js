@@ -3,18 +3,21 @@ import styled from 'styled-components';
 export const MessageContainer = styled.div`
    height: 10vh;
    width:100%;
-   background-color: #474747;
    cursor:pointer;
-   border-bottom: 2px solid #B4B4B4;
+   background-image: ${ (props) => props.theme.messageBoxBackground};
+   background-color: ${ (props) => props.theme.messageBoxBackground};
+   border-bottom:${ (props) => props.theme.messageBoxBorder };
+   box-sizing: border-box;
 `;
 export const MessageBody = styled.div`
+   
    height:100%;
-   width:90%;
+  
    display:flex;
    align-items: center;
    justify-content:space-between;
    padding-left:2%;
-   padding-right:2%;
+   padding-right:4%;
   
 `;
 export const MessageContent = styled.div`
@@ -34,7 +37,7 @@ export const MessageDetail = styled.div`
   
 `;
 export const ReceiverName = styled.h4`
-   color: #fff;
+   color: ${ (props) => props.theme.messageTextColor };
    font-style: normal;
    font-weight: bold;
    cursor:pointer;
@@ -42,11 +45,12 @@ export const ReceiverName = styled.h4`
 export const RecentMessage = styled.p`
    font-style: normal;
    font-weight: normal;
-   font-size:12px;
-   color: #fff;
+   font-size:14px;
+   color: ${ (props) => props.theme.messageTextColor };
+   word-spacing:3px;
   
 `;
 export const MessageNotifiaction = styled.div`
-   
+   margin-right:5%;
   
 `;

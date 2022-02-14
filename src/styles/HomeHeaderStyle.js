@@ -6,6 +6,7 @@ export const HomeHeaderContainer = styled.div`
   height: 9vh;
   background-color: ${(props) => props.theme.headerBackground};
   background-image: ${(props) => props.theme.headerBackground};  
+  box-shadow: 0px 4px 16px 10px rgba(45, 45, 45, 0.25);
   min-height: 9vh;
   align-items: center;
   display: grid;
@@ -17,7 +18,8 @@ export const HomeHeaderContainer = styled.div`
 export const SearchBarStyle = styled.div`
   height: 30px;
   width: 40vw;
-  background-color: #353535;
+  background-image: ${ (props) => props.theme.searchBar};
+  background-color: ${ (props) => props.theme.searchBar};
   display: flex;
   align-iitems: center;
   justify-content: center;
@@ -35,4 +37,5 @@ export const HomeHeaderIcons = styled.div`
   align-items:center;
   padding-left:10px;
   padding-right:10px;
+  
 `;
