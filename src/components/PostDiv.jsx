@@ -53,13 +53,13 @@ function PostDiv(props) {
             <PostFooter>
                 <PostLikeSection>
                     < Confetti />
-                    <CommentIcon style={{ fontSize: "30px" }} />
-                    <LaunchIcon style={{ fontSize: "30px" }} />
+                    <CommentIcon style={{ fontSize: "30px", cursor:"pointer" }} />
+                    <LaunchIcon style={{ fontSize: "30px", cursor:"pointer" }} />
                 </PostLikeSection>
-                <PlayForWorkIcon style={{ fontSize: "30px" }} />
+                <PlayForWorkIcon style={{ fontSize: "30px", cursor:"pointer" }} />
             </PostFooter>
             <PostCommentSection>
-                Blasted by i_am_akash_babu and 4,508 others
+                <p style={{ cursor:"pointer" }}>Blasted by i_am_akash_babu and 4,508 others </p>
             </PostCommentSection>
             <PostCommentViewmore>View All Comments more..</PostCommentViewmore>
             <PostCommentBoxSection>
