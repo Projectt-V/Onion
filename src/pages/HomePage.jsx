@@ -10,6 +10,7 @@ import CommentIcon from '@material-ui/icons/Comment';
 import PlayForWorkIcon from '@material-ui/icons/PlayForWork';
 import LaunchIcon from '@material-ui/icons/Launch';
 import TextField from '../components/TextField';
+import Story from '../components/Story';
 
 
 function HomePage() {
@@ -40,7 +41,9 @@ function HomePage() {
       <HomeHeader />
       <HomeBody>
         <FeedBody>
-          <StoryDiv></StoryDiv>
+          <StoryDiv>
+            <Story/>
+          </StoryDiv>
           <PostDiv>
                 <PostHeader>
                     <PostProfile>

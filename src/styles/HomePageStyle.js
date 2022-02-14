@@ -35,7 +35,6 @@ export const MessageBody = styled.div`
 
 export const StoryDiv = styled.div`
    width: 100%;
-   background-color: green;
    height: 15%;
    margin-bottom: 10px;
 
