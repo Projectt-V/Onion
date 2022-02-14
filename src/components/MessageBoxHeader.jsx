@@ -14,6 +14,7 @@ function MessageBoxHeader() {
         justifyContent: "flex-start",
         fontFamily: "'Work Sans', sans-serif",
         marginTop: "3px",
+        cursor: "pointer"
     };
     
   return (

@@ -15,7 +15,7 @@ export const PostHeader = styled.div`
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 10px 0px 10px;
+   padding: 10px 0px 10px; 
 `;
 
 export const PostProfile = styled.div`
@@ -60,6 +60,8 @@ export const PostFooter = styled.div`
    display: flex;
    align-items: center;
    justify-content: space-between;
+   margin-top: 10px;
+   margin-bottom: 10px;
 `;
 export const PostLikeSection = styled.div`
    display: flex;
@@ -75,7 +77,6 @@ export const PostCommentSection = styled.h4`
    font-weight: bold;
    margin-left:2%;
    letter-spacing:.5px;
-   cursor:pointer;
 `;
 export const PostCommentViewmore = styled.h5`
    margin-top:1%;

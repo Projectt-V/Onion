@@ -36,7 +36,7 @@ function Confetii() {
     <div class="confetti-button" >
       <Confetti active={active} config={ config } />
      
-         <Icon icon="ph:confetti" height={30} onClick={() => setActive(true)}/>
+         <Icon icon="ph:confetti" height={30} onClick={() => setActive(true)} style={{ cursor: "pointer" }} />
      
 
     </div>

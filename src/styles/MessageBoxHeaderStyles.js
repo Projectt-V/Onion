@@ -7,6 +7,8 @@ export const MessageHeaderContainer = styled.div`
    background-color:${ (props) => props.theme.messageHeaderBackground};
    overflow: auto;
    color:${ (props) => props.theme.messageHeaderFontcolor};
+   position: -webkit-sticky;
+   position: sticky;
    
 `;
 export const MessageHeaderBody = styled.div`
@@ -19,22 +21,19 @@ export const MessageHeaderBody = styled.div`
    
 `;
 export const MessageTitleSection = styled.div`
-   width:25%;
+   
    display:flex;
    align-items: center;
    justify-content:space-between;
 `;
 export const MessageIconSection = styled.div`
-   
    display:flex;
    align-items: center;
-   
-
 `;
 export const Title = styled.h3`
    color:${ (props) => props.theme.messageHeaderFontcolor};
    font-style: normal;
    font-weight: bold;
-   
+   margin-left: 10px;
   
 `;
