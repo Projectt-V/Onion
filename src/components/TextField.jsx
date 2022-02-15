@@ -13,13 +13,9 @@ function TextField(props) {
       outline: "none",
       border: "none",
       paddingLeft: "10px",
-      color: theme.fontcolor,
-      
+      color: theme.fontcolor
   };
 
-
-
-  
   return(
      <input type={props.type} placeholder = {props.placeholder} style={textStyle} />
   );

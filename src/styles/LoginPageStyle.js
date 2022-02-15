@@ -4,7 +4,7 @@ export const LoginScreen = styled.div`
    height: 100%;
    width: 100%;
    display: grid;
-   grid-template-rows: 9vh 91vh;
+   grid-template-rows: 91vh;
    grid-template-columns: auto;
 `;
 
