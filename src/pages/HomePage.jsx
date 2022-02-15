@@ -12,7 +12,6 @@ function HomePage() {
 
   return (
     <HomeStyle>
-      <HomeHeader />
       <HomeBody>
         <FeedBody>
           <StoryDiv>

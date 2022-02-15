@@ -40,6 +40,7 @@ export const PostProfileName = styled.h4`
    font-style: normal;
    font-weight: bold;
    cursor:pointer;
+   margin-right: 10px;
 `;
 export const PostTime = styled.p`
    font-style: normal;

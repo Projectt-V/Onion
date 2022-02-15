@@ -12,6 +12,7 @@ export const HomeHeaderContainer = styled.div`
   display: grid;
   grid-template-columns: 25vw 40vw 35vw;
   grid-template-rows: auto;
+  border-bottom: 1px solid #2E2E2E;
 
 `;
 

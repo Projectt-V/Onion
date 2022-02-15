@@ -74,6 +74,6 @@ function PostDiv(props) {
             </PostCommentBoxSection>
         </PostDivStyle>
     );
-} 
+}  
 
 export default PostDiv;

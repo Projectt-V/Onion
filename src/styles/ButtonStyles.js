@@ -10,7 +10,7 @@ export const ButtonStyle = styled.div`
    border-radius: 10px;
    cursor: pointer;
    font-family: 'Work Sans', sans-serif;
-
+   
    @media (max-width: 425px) {
       height: 80%
     }

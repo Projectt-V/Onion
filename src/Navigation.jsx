@@ -3,11 +3,20 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from './pages/SignupPage';
 import Signup2page from './pages/Signup2page';
+import NewPost from './pages/NewPost';
 import HomePage from './pages/HomePage';
+import HomeHeader from './components/HomeHeader';
+import LoginHeader from './components/LoginHeader';
 
 function Navigation() {
     return (
         <Router>
+            {
+            
+              (window.location.pathname == "/login") ? (<LoginHeader />) : (<HomeHeader />)
+
+            }
+
             <Switch>
                 {["/", "/login"].map((path, index) =>
                     <Route exact path={path} key={index}><LoginPage /></Route>
@@ -18,6 +27,8 @@ function Navigation() {
                 <Route path={"/getpassword"} ><Signup2page /></Route>
 
                 <Route path={"/home"} ><HomePage /></Route>
+
+                <Route path={"/newpost"} ><NewPost /></Route>
             </Switch>
         </Router>
     );
