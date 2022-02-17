@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { useDropzone } from 'react-dropzone'
-import { useTheme } from 'styled-components'; 
+import { useTheme } from 'styled-components';
 import { HomeStyle, HomeBody, MessageBody, MessageFeedBody } from '../styles/HomePageStyle';
 import { NewPostBody, PostPreview1, PrevTitle, SelectFiles, PostPreview2, CaptionBox, PostButton } from '../styles/NewPostStyle';
 import MessageBox from '../components/MessageBox';
@@ -12,6 +11,9 @@ import Button from '../components/Button';
 import TextField from '../components/TextField';
 
 function NewPost() {
+
+    const [isImage, setIsImage] = useState(false);
+    const [isVideo, setIsVideo] = useState(false);
 
 
     const cmdiconStyle = {
@@ -30,23 +32,22 @@ function NewPost() {
                 setImgUrl(reader.result)
                 document.getElementById("prv1").style.display = "none"
                 document.getElementById("prv2").style.display = "block"
+                console.log("Hello")
+                if(reader.result[5] === 'i'){
+                    setIsImage(true);
+                }
+                else if(reader.result[5] === 'v') {
+                    setIsVideo(true);
+                }
             }
         }
         reader.readAsDataURL(e.target.files[0])
     }
 
-    const iconStyle = {
-        marginRight: "10px",
-        color: theme.fontcolor,
-        cursor: "pointer"
-    };
+    const VideoTag = <video src={imgUrl} style={{ height: "100%", width: "100%" }} controls loop ></video>
 
-    const fileStyle = {
-        backgroundColor: "transparent",
-        height: "100%",
-        wisth: "100%"
-    }
 
+    const ImageTag = <img src={imgUrl} style={{ height: "100%", width: "100%" }} />
 
 
     return (
@@ -74,11 +75,11 @@ function NewPost() {
                         </SelectFiles>
                     </PostPreview1>
                     <PostPreview2 id="prv2" style={{ display: "none" }}>
-                        <img src={imgUrl} style={{ height: "100%", width: "100%" }} />
+                        { isVideo? VideoTag: ImageTag }
                     </PostPreview2>
                     <CaptionBox>
                         <Icon icon="fluent:emoji-20-regular" style={cmdiconStyle} />
-                        <TextField type={"text"} placeholder={"Add Caption"} style={{ color:theme.fontcolor, fontSize: "20px" }} />
+                        <TextField type={"text"} placeholder={"Add Caption"} style={{ color: theme.fontcolor, fontSize: "20px" }} />
                         <PostButton>
                             <Icon icon="fluent:send-20-filled" style={cmdiconStyle} />
                         </PostButton>
