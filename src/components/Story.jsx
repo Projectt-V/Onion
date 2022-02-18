@@ -1,24 +1,37 @@
 import React from 'react';
+import { useTheme } from 'styled-components';
 import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
 import Avatar from '@material-ui/core/Avatar';
-function Story() {
+import {AddStory,StoryUsername,StoryBody,UserStory  } from '../styles/StoryStyles';
 
-    const iconStyle = {
-        color: "#fff",
-        fontSize:"10px",
-        justifyContent: "flex-start",
-        fontFamily: "'Work Sans', sans-serif",
-    };
+
+function Story() {
+    const theme = useTheme();
+
+    
     const avatarStyle = {
         color: "#fff",
         fontSize:"30px",
-        padding:"15px"
-        
+        padding:"15px",
+        background:"green"
     };
+    const avatarStyle1 = {
+      color: "#fff",
+      fontSize:"30px",
+      padding:"15px",
+      border:"3px solid #C1005B",
+      background:"orange"
+      
+  };
+ 
 
   return (
-    <div>
+    <StoryBody>
+       <AddStory>
+              <Avatar style={avatarStyle}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+        </AddStory>
+         
       <Tabs
         
           variant="scrollable"
@@ -26,17 +39,65 @@ function Story() {
           indicatorColor="primary"
           textColor="primary"
           aria-label="scrollable force tabs example"
-        >
-          <Tab label="Item One" icon={<Avatar style={avatarStyle}>H</Avatar>} style={iconStyle}/>
-          <Tab label="Item Two" icon={<Avatar style={avatarStyle}>H</Avatar>}  style={iconStyle}/>
-          <Tab label="Item Three" icon={<Avatar style={avatarStyle}>H</Avatar>}  style={iconStyle}/>
-          <Tab label="Item Four" icon={<Avatar style={avatarStyle}>H</Avatar>}  style={iconStyle}/>
-          <Tab label="Item Five" icon={<Avatar style={avatarStyle}>H</Avatar>} style={iconStyle}/>
-          <Tab label="Item Six" icon={<Avatar style={avatarStyle}>H</Avatar>}  style={iconStyle}/>
-          <Tab label="Item Seven" icon={<Avatar style={avatarStyle}>H</Avatar>} style={iconStyle}/>
-        </Tabs>
-      
-    </div>
+        > 
+        
+          
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+         <UserStory>
+              <Avatar style={avatarStyle1}>H</Avatar>
+              <StoryUsername>Add Yours</StoryUsername>
+         </UserStory>
+        
+         
+      </Tabs>
+      </StoryBody>
   );
 }
 

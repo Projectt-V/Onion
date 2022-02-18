@@ -6,13 +6,13 @@ export const HomeHeaderContainer = styled.div`
   height: 9vh;
   background-color: ${(props) => props.theme.headerBackground};
   background-image: ${(props) => props.theme.headerBackground};  
-  box-shadow: 0px 4px 16px 10px rgba(45, 45, 45, 0.25);
+  border-bottom:1px solid #2E2E2E;
   min-height: 9vh;
   align-items: center;
   display: grid;
   grid-template-columns: 25vw 40vw 35vw;
   grid-template-rows: auto;
-  border-bottom: 1px solid #2E2E2E;
+  
 
 `;
 

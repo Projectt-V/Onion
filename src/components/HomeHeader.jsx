@@ -10,6 +10,7 @@ import Avatar from '@material-ui/core/Avatar';
 import ExploreIcon from '@material-ui/icons/Explore';
 import { useTheme } from 'styled-components';
 import { useHistory } from 'react-router-dom';
+import HomeRoundedIcon from '@material-ui/icons/Home';
 
 function HomeHeader() {
    
@@ -33,10 +34,11 @@ function HomeHeader() {
                 <TextField type={"text"} placeholder={"Type to search"} />
             </SearchBarStyle>
             <HomeHeaderIcons>
+                <HomeRoundedIcon style={iconStyle} onClick={() => history.push("/home") } />
                 <AddBoxRoundedIcon style={iconStyle} onClick={() => history.push("/newpost") } />
                 <ExploreIcon style={iconStyle}/>
                 <Badge badgeContent={4} color="secondary" >
-                    <NotificationsIcon style={iconStyle}/>
+                    <NotificationsIcon style={iconStyle} onClick={() => history.push("/notification") }/>
                 </Badge>
                 <Avatar>H</Avatar>
             </HomeHeaderIcons>

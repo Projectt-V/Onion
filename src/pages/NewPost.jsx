@@ -12,14 +12,14 @@ import Button from '../components/Button';
 import TextField from '../components/TextField';
 
 function NewPost() {
-
+    const theme = useTheme();
 
     const cmdiconStyle = {
         fontSize: "27px",
         marginRight: "4px",
     };
 
-    const theme = useTheme();
+    
 
     const [imgUrl, setImgUrl] = useState("../logo.png");
 
