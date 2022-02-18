@@ -19,6 +19,8 @@ export const PostPreview1 = styled.div`
   align-items: center;
   justify-content: center;
   background-color: rgba(255,255,255,0.09);
+  margin-bottom: 20px;
+
 `;
 
 export const PrevTitle = styled.h2`
@@ -39,6 +41,7 @@ export const PostPreview2 = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 `;
 
 export const CaptionBox = styled.div`

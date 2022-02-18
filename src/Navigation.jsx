@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import HomeHeader from './components/HomeHeader';
 import LoginHeader from './components/LoginHeader';
 
+
 function Navigation() {
     return (
         <Router>
@@ -29,6 +30,7 @@ function Navigation() {
                 <Route path={"/home"} ><HomePage /></Route>
 
                 <Route path={"/newpost"} ><NewPost /></Route>
+
             </Switch>
         </Router>
     );

@@ -25,6 +25,7 @@ export const PostProfile = styled.div`
    align-items:center;
    margin-left: 2%;
    height: 100%;
+   position: static;
 `;
 export const ProfileNameContainer = styled.div`
   display:flex;
