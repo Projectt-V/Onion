@@ -3,6 +3,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Navigation from './Navigation';
 
 const darkTheme = {
+  theme: "dark",
   fontcolor: "#fff",
   headerBackground: "#2E2E2E",
   bodyBackground: "#393939",
@@ -24,6 +25,7 @@ const darkTheme = {
 
 
 const lightTheme = {
+  theme: "light",
   fontcolor: "#050505",
   loginHeader:"transparent",
   loginContainerBackground: "#fff",
@@ -71,7 +73,7 @@ body {
 `;
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={lightTheme}>
       <GlobalStyles />
       <Navigation />
     </ThemeProvider>

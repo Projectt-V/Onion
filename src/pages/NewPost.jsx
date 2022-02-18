@@ -5,6 +5,7 @@ import { NewPostBody, PostPreview1, PrevTitle, SelectFiles, PostPreview2, Captio
 import MessageBox from '../components/MessageBox';
 import MessageBoxHeader from '../components/MessageBoxHeader';
 import { PostHeader, PostProfile, ProfileNameContainer, PostProfileName } from '../styles/PostStyle';
+import EmojiTextBox from '../components/EmojiTextBox';
 import Avatar from '@material-ui/core/Avatar';
 import { Icon } from '@iconify/react';
 import Button from '../components/Button';
@@ -77,13 +78,9 @@ function NewPost() {
                     <PostPreview2 id="prv2" style={{ display: "none" }}>
                         { isVideo? VideoTag: ImageTag }
                     </PostPreview2>
-                    <CaptionBox>
-                        <Icon icon="fluent:emoji-20-regular" style={cmdiconStyle} />
-                        <TextField type={"text"} placeholder={"Add Caption"} style={{ color: theme.fontcolor, fontSize: "20px" }} />
-                        <PostButton>
-                            <Icon icon="fluent:send-20-filled" style={cmdiconStyle} />
-                        </PostButton>
-                    </CaptionBox>
+                    
+                    <EmojiTextBox isMicEnabled={false} />
+                    
                 </NewPostBody>
                 <MessageBody>
                     <MessageBoxHeader />
