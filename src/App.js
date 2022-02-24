@@ -15,12 +15,14 @@ const darkTheme = {
   buttonBackgroundSecondary: "linear-gradient(225deg, #9C2441, #53506D)",
   textBoxBackground: "#616161",
   messageBodyBackground:"#353535",
-  messageHeaderBackground:"#353535",
+  messageHeaderBackground:"#2E2E2E",
   messageTextColor:"#fff",
-  messageBoxBackground:"#474747",
-  messageBoxBorder:"2px solid #9B9B9B",
+  messageBoxBackground:"#353535",
+  messageBoxBorder:"1px solid #9B9B9B",
   searchBar:"#353535",
   messageHeaderFontcolor:"#fff",
+  notifyBoxBackground:"#474747",
+  notifyBoxShadow:"none"
 }
 
 
@@ -38,13 +40,15 @@ const lightTheme = {
   buttonBackgroundSecondary: "linear-gradient(225deg, #9C2441, #53506D)",
   textBoxBackground: "#E9E9E9",
   messageBodyBackground:"#fff",
-  messageBodyBorder:" 0px 4px 16px 10px rgba(45, 45, 45, 0.25)",
+  messageBodyBorder:" 0px 4px 16px 10px rgba(150, 150, 150, 0.25);",
   messageHeaderBackground:"#C1005B",
   messageBoxBackground:"transparent",
   messageTextColor:"#000",
-  messageBoxBorder:" ",
+  messageBoxBorder:"none",
   searchBar:"#E9E9E9",
   messageHeaderFontcolor:"#fff",
+  notifyBoxBackground:"linear-gradient(94.32deg, rgba(214, 214, 214, 0.19) 0%, rgba(196, 196, 196, 0.22) 100%)",
+  notifyBoxShadow:"16px 16px 32px #fff, inset 4px 4px 16px #E5E5E5, inset -8px -8px 16px #e6e6e6",
 };
 
 
