@@ -22,6 +22,9 @@ function NewPost() {
     const theme = useTheme();
 
 
+    const theme = useTheme();
+
+
     const cmdiconStyle = {
         fontSize: "27px",
         marginRight: "4px",

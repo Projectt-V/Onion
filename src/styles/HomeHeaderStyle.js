@@ -13,6 +13,10 @@ export const HomeHeaderContainer = styled.div`
   grid-template-columns: 25vw 40vw 35vw;
   grid-template-rows: auto;
   
+<<<<<<< HEAD
+=======
+
+>>>>>>> e3f1b79c86caa50669802a8a6d6cd3956cb5d121
 `;
 
 export const SearchBarStyle = styled.div`
