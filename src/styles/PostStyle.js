@@ -92,7 +92,7 @@ export const PostCommentViewmore = styled.h5`
 export const PostCommentBoxSection = styled.div`
   height: 40px;
   padding-left:2%;
-  padding-right:2%;
+  padding-right:2%; 
   padding-bottom:1%;
 `;
 export const PostCommentBox = styled.div`

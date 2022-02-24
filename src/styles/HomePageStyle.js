@@ -13,6 +13,21 @@ export const HomeBody = styled.div`
    grid-template-rows: auto;
 
 
+   @media (max-width: 425px) {
+      grid-template-columns: 100vw 0vw;
+      grid-template-rows: auto;
+    }
+
+    @media (max-height: 550px) {
+      grid-template-columns: 100vw 0vw;
+      grid-template-rows: auto;
+    }
+
+   @media (min-width: 426px) and (max-width: 768px) {
+      grid-template-columns: 100vw 0vw;
+      grid-template-rows: auto;
+   }
+
 `;
 
 export const FeedBody = styled.div`
