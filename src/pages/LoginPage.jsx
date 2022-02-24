@@ -25,6 +25,7 @@ function LoginPage(props) {
     return (
 
         <LoginScreen>
+            
             <LoginBody>
                 <LoginContainer>
                     <LoginSignupHeader>Login For <br/> <Logo width="200px" height="80px" /></LoginSignupHeader>

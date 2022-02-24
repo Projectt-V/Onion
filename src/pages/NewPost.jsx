@@ -13,8 +13,12 @@ import TextField from '../components/TextField';
 
 function NewPost() {
 
+
     const [isImage, setIsImage] = useState(false);
     const [isVideo, setIsVideo] = useState(false);
+
+
+    const theme = useTheme();
 
 
     const cmdiconStyle = {
@@ -22,7 +26,7 @@ function NewPost() {
         marginRight: "4px",
     };
 
-    const theme = useTheme();
+    
 
     const [imgUrl, setImgUrl] = useState("../logo.png");
 
