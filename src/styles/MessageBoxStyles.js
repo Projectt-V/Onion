@@ -8,6 +8,19 @@ export const MessageContainer = styled.div`
    background-color: ${ (props) => props.theme.messageBoxBackground};
    border-bottom:${ (props) => props.theme.messageBoxBorder };
    box-sizing: border-box;
+   display: block;
+   
+   @media (max-width: 425px) {
+      display: none;
+    }
+
+    @media (max-height: 550px) {
+      display: none;
+    }
+
+   @media (min-width: 426px) and (max-width: 768px) {
+      display: none;
+   }
 `;
 export const MessageBody = styled.div`
    

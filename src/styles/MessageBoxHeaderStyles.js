@@ -1,14 +1,27 @@
 import styled from 'styled-components';
 
 export const MessageHeaderContainer = styled.div`
-   height: 10vh;
+   height: 9vh;
    width:100%;
    background-image:${ (props) => props.theme.messageHeaderBackground};
    background-color:${ (props) => props.theme.messageHeaderBackground};
    overflow: auto;
    color:${ (props) => props.theme.messageHeaderFontcolor};
-   position: -webkit-sticky;
-   position: sticky;
+   position: fixed
+   margin-bottom: 10vh;
+   top: 200px;
+
+   @media (max-width: 425px) {
+      display: none;
+    }
+
+    @media (max-height: 550px) {
+      display: none;
+    }
+
+   @media (min-width: 426px) and (max-width: 768px) {
+      display: none;
+   }
    
 `;
 export const MessageHeaderBody = styled.div`

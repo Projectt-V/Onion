@@ -5,7 +5,7 @@ export const EmojiTextContainer = styled.div`
   padding-left:2%;
   padding-right:2%;
   padding-bottom:1%;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 `;
 
 
