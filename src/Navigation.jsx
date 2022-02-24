@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import HomeHeader from './components/HomeHeader';
 import BottomNavigator from './components/BottomNavigator';
 import LoginHeader from './components/LoginHeader';
+import NotificationPage from "./pages/NotificationPage";
 
 
 function Navigation() {
@@ -44,6 +45,8 @@ function Navigation() {
                 <Route path={"/home"} ><HomePage /></Route>
 
                 <Route path={"/newpost"} ><NewPost /></Route>
+
+                <Route path={"/notification"} ><NotificationPage /></Route>
 
             </Switch>
 

@@ -13,8 +13,12 @@ import TextField from '../components/TextField';
 
 function NewPost() {
 
+
     const [isImage, setIsImage] = useState(false);
     const [isVideo, setIsVideo] = useState(false);
+    const theme = useTheme();
+
+
     const theme = useTheme();
 
 
