@@ -77,7 +77,7 @@ body {
 `;
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={lightTheme}>
       <GlobalStyles />
       <Navigation />
     </ThemeProvider>

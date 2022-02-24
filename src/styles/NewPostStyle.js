@@ -19,7 +19,7 @@ export const NewPostBody = styled.div`
     grid-template-rows: auto;
   }
 
- @media (min-width: 426px) and (max-width: 768px) {
+ @media (min-width: 426px) and (max-width: 768px) { 
     grid-template-columns: 100vw 0vw;
     grid-template-rows: auto;
  }

@@ -13,10 +13,6 @@ export const HomeHeaderContainer = styled.div`
   grid-template-columns: 25vw 40vw 35vw;
   grid-template-rows: auto;
   
-<<<<<<< HEAD
-=======
-
->>>>>>> e3f1b79c86caa50669802a8a6d6cd3956cb5d121
 `;
 
 export const SearchBarStyle = styled.div`
@@ -29,6 +25,15 @@ export const SearchBarStyle = styled.div`
   justify-content: center;
   padding: 8px;
   border-radius:5px;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
+
+ @media (min-width: 426px) and (max-width: 768px) {
+    display: none;
+ }
+
 `;
 
 export const HomeHeaderIcons = styled.div`
@@ -40,5 +45,27 @@ export const HomeHeaderIcons = styled.div`
   align-items:center;
   padding-left:10px;
   padding-right:10px;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
+
+ @media (min-width: 426px) and (max-width: 768px) {
+    display: none;
+ }
   
+`;
+
+export const MsgIcon = styled.div`
+  margin-left: 170%;
+  display: none;
+  font-color: ${ (props) => props.theme.fontcolor }
+
+  @media (max-width: 425px) {
+    display: block;
+  }
+
+ @media (min-width: 426px) and (max-width: 768px) {
+    display: block;
+ }
 `;

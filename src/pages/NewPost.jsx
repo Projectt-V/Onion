@@ -18,19 +18,6 @@ function NewPost() {
     const [isVideo, setIsVideo] = useState(false);
     const theme = useTheme();
 
-
-    const theme = useTheme();
-
-
-    const theme = useTheme();
-
-
-    const cmdiconStyle = {
-        fontSize: "27px",
-        marginRight: "4px",
-    
-    };
-
     
 
     const [imgUrl, setImgUrl] = useState("../logo.png");

@@ -1,11 +1,12 @@
 import React from 'react';
-import { HomeHeaderContainer, SearchBarStyle, HomeHeaderIcons } from '../styles/HomeHeaderStyle';
+import { HomeHeaderContainer, SearchBarStyle, HomeHeaderIcons, MsgIcon } from '../styles/HomeHeaderStyle';
 import Logo from '../components/Logo';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import TextField from '../components/TextField';
 import AddBoxRoundedIcon from '@material-ui/icons/AddBoxRounded';
 import Badge from '@material-ui/core/Badge';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import QuestionAnswerOutlinedIcon from '@material-ui/icons/QuestionAnswerOutlined';
 import Avatar from '@material-ui/core/Avatar';
 import ExploreIcon from '@material-ui/icons/Explore';
 import { useTheme } from 'styled-components';
@@ -17,6 +18,7 @@ function HomeHeader() {
     const history = useHistory();
 
     const theme = useTheme();
+
     const iconStyle = {
         color: theme.fontcolor,
         fontSize: "25px",
@@ -42,6 +44,9 @@ function HomeHeader() {
                 </Badge>
                 <Avatar>H</Avatar>
             </HomeHeaderIcons>
+            <MsgIcon>
+                <QuestionAnswerOutlinedIcon style={iconStyle} />
+            </MsgIcon>
         </HomeHeaderContainer>
     );
 }
