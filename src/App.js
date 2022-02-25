@@ -19,7 +19,7 @@ const darkTheme = {
   messageTextColor:"#fff",
   messageBoxBackground:"#353535",
   messageBoxBorder:"1px solid #9B9B9B",
-  searchBar:"#353535",
+  searchBar:"#595959",
   messageHeaderFontcolor:"#fff",
   notifyBoxBackground:"#474747",
   notifyBoxShadow:"none"
@@ -77,7 +77,7 @@ body {
 `;
 
   return (
-    <ThemeProvider theme={lightTheme}>
+    <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
       <Navigation />
     </ThemeProvider>
