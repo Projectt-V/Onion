@@ -14,14 +14,17 @@ export const HomeBody = styled.div`
 
 
    @media (max-width: 425px) {
+      grid-template-columns: 100vw 0vw;
       border: none;
     }
 
     @media (max-height: 550px) {
+      grid-template-columns: 100vw 0vw;
       border: none;
     }
 
    @media (min-width: 426px) and (max-width: 768px) {
+      grid-template-columns: 100vw 0vw;
       border: none;
    }
 
