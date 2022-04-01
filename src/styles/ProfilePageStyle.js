@@ -80,14 +80,14 @@ export const BioDiv = styled.div`
    width: 80%;
    margin-top: 20px;
    display: flex;
+   flex-direction:column;
    margin-bottom: 11vh;
 `;
 
-export const BioDivLeft = styled.div`
-   width: 20%;
-   font-size: 23px;
+export const BioDivLeft = styled.h2`
+  
    font-weight: bold;
-   
+   font-size: 20px;
 
    @media (max-width: 425px) {
       font-size: 18px;
@@ -108,12 +108,11 @@ export const BioDivLeft = styled.div`
 `;
 
 export const BioDivRight = styled.div`
-   width: 80%;
+   width: 95%;
    margin-top:4px;
-   background-color: ${ (props) => props.theme.searchBar};
-   padding: 30px;
-   border-bottom-right-radius: 60px;
-   border-top-left-radius: 60px;
+   background: ${ (props) => props.theme.searchBar } ;
+   padding: 20px;
+   border-radius:10px;
 `;
 
 

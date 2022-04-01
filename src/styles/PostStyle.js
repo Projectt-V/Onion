@@ -5,17 +5,20 @@ export const PostDivStyle = styled.div`
    width: 100%;
    color: ${ (props) => props.theme.fontcolor };
    margin-bottom: 10px;
-
+  
+  
 `;
 
 export const PostHeader = styled.div`
    background-color: transparent;
-   width: 100%;
+   
    height: 9%;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 10px 0px 10px; 
+   padding-left:2%;
+   
+   padding-bottom:10px; 
 `;
 
 export const PostProfile = styled.div`
@@ -23,7 +26,7 @@ export const PostProfile = styled.div`
    flex-direction:row;
    justify-content: space-between;
    align-items:center;
-   margin-left: 2%;
+  
    height: 100%;
    position: static;
 `;

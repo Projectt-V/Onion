@@ -6,7 +6,7 @@ export const HomeHeaderContainer = styled.div`
   height: 9vh;
   background-color: ${(props) => props.theme.headerBackground};
   background-image: ${(props) => props.theme.headerBackground};  
-  border-bottom:1px solid #2E2E2E;
+  border-bottom: ${(props) => props.theme.headerBottomBorder};
   min-height: 9vh;
   align-items: center;
   display: grid;

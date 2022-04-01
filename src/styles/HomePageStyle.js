@@ -35,6 +35,7 @@ export const FeedBody = styled.div`
    width: 100%;
    height: 100%;
    overflow: scroll;
+  
    overflow-x: hidden;
    background: ${ (props) => props.theme.bodyBackground } ;
    border-right: 2px solid #717272;
@@ -55,6 +56,13 @@ export const FeedBody = styled.div`
    }
 `;
 
+export const FeedArea = styled.div`
+
+padding-left:2%;
+padding-right:2%;
+
+  
+`;
 
 export const MessageBody = styled.div`
    width: 100%;
