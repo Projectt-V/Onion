@@ -6,6 +6,7 @@ const darkTheme = {
   theme: "dark",
   fontcolor: "#fff",
   headerBackground: "#2E2E2E",
+  headerBottomBorder:'none',
   bodyBackground: "#393939",
   loginContainerBackground: "#474747",
   loginHeader: "#FEFEFE",
@@ -16,10 +17,11 @@ const darkTheme = {
   textBoxBackground: "#616161",
   messageBodyBackground:"#353535",
   messageHeaderBackground:"#2E2E2E",
+  messageHeaderBottom:'none',
   messageTextColor:"#fff",
   messageBoxBackground:"#353535",
   messageBoxBorder:"1px solid #9B9B9B",
-  searchBar:"#595959",
+  searchBar:"#353535",
   messageHeaderFontcolor:"#fff",
   notifyBoxBackground:"#474747",
   notifyBoxShadow:"none"
@@ -33,6 +35,7 @@ const lightTheme = {
   loginContainerBackground: "#fff",
   buttonTextActive: "#fff",
   headerBackground:"#fff",
+  headerBottomBorder:'2px solid #E9E9E9',
   bodyBackground: "#fff",
   buttonTextActive: "#fff",
   buttonTextInActive: "#D0D0D0",
@@ -41,12 +44,13 @@ const lightTheme = {
   textBoxBackground: "#E9E9E9",
   messageBodyBackground:"#fff",
   messageBodyBorder:" 0px 4px 16px 10px rgba(150, 150, 150, 0.25);",
-  messageHeaderBackground:"#C1005B",
+  messageHeaderBackground:"#E9E9E9",
   messageBoxBackground:"transparent",
   messageTextColor:"#000",
-  messageBoxBorder:"none",
+  messageBoxBorder:"1px solid #E9E9E9",
+  messageHeaderBottom:'none',
   searchBar:"#E9E9E9",
-  messageHeaderFontcolor:"#fff",
+  messageHeaderFontcolor:"#000",
   notifyBoxBackground:"linear-gradient(94.32deg, rgba(214, 214, 214, 0.19) 0%, rgba(196, 196, 196, 0.22) 100%)",
   notifyBoxShadow:"16px 16px 32px #fff, inset 4px 4px 16px #E5E5E5, inset -8px -8px 16px #e6e6e6",
 };
@@ -77,7 +81,7 @@ body {
 `;
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={lightTheme}>
       <GlobalStyles />
       <Navigation />
     </ThemeProvider>

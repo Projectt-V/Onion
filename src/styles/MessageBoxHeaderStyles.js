@@ -7,9 +7,10 @@ export const MessageHeaderContainer = styled.div`
    background-color:${ (props) => props.theme.messageHeaderBackground};
    overflow: auto;
    color:${ (props) => props.theme.messageHeaderFontcolor};
-   position: fixed
-   margin-bottom: 10vh;
-   top: 200px;
+   
+   border-bottom: ${ (props) => props.theme.messageHeaderBottom};
+  
+   
 
    @media (max-width: 425px) {
       display: none;

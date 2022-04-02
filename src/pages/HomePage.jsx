@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeStyle, HomeBody, FeedBody, MessageBody, StoryDiv, MessageFeedBody } from '../styles/HomePageStyle';
+import { HomeStyle, HomeBody, FeedBody, MessageBody, StoryDiv, MessageFeedBody,FeedArea } from '../styles/HomePageStyle';
 import HomeHeader from '../components/HomeHeader';
 import Story from '../components/Story';
 import PostDiv from '../components/PostDiv';
@@ -14,11 +14,13 @@ function HomePage() {
     <HomeStyle>
       <HomeBody>
         <FeedBody>
-          <StoryDiv>
-            <Story/>
-          </StoryDiv>
-          <PostDiv />
-          <PostDiv />
+          <FeedArea>
+            <StoryDiv>
+              <Story/>
+            </StoryDiv>
+            <PostDiv />
+            <PostDiv />
+          </FeedArea>
         </FeedBody>
         <MessageBody>
             <MessageBoxHeader/>

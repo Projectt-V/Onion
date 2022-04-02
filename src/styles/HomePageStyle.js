@@ -35,23 +35,34 @@ export const FeedBody = styled.div`
    width: 100%;
    height: 100%;
    overflow: scroll;
+  
    overflow-x: hidden;
    background: ${ (props) => props.theme.bodyBackground } ;
    border-right: 2px solid #717272;
 
    @media (max-width: 425px) {
+      width: 100vw;
       border: none;
     }
 
     @media (max-height: 550px) {
+      width: 100vw;
       border: none;
     }
 
    @media (min-width: 426px) and (max-width: 768px) {
+      width: 100vw;
       border: none;
    }
 `;
 
+export const FeedArea = styled.div`
+
+padding-left:2%;
+padding-right:2%;
+
+  
+`;
 
 export const MessageBody = styled.div`
    width: 100%;
@@ -60,6 +71,7 @@ export const MessageBody = styled.div`
    background-color: ${ (props) => props.theme.messageBodyBackground };
    overflow: auto;
    box-shadow:${ (props) => props.theme.messageBodyBorder }
+   
    
 `;
 export const MessageFeedBody = styled.div`
