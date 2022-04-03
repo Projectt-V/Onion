@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Confetti from "react-dom-confetti";
 import { Icon } from '@iconify/react';
+import IconButton from '@material-ui/core/IconButton';
 
 function Confetii() {
   // 'Confetti' only shows the confettig if 'active' turn from 'falsy' to 'truthy'.
@@ -15,8 +16,16 @@ function Confetii() {
     color: "black",
     fontSize: "25px",
     marginRight: "4px",
+    cursor:"pointer",
   };
-
+  const likeIconStyle = {
+    color:"#fff",
+    background: '#D44760',
+    boxShadow: 'inset 4px 4px 8px #F46E86, inset -4px -4px 8px #973547',
+    borderRadius: "50%",
+    padding:'8px',
+    
+  };
 
   const config = {
     angle: "60",
@@ -34,9 +43,10 @@ function Confetii() {
   return (
     <div class="confetti-button" >
       <Confetti active={active} config={ config } />
+         <IconButton   style={likeIconStyle} onClick={() => setActive(true)}>
      
-         <Icon icon="ph:confetti" height={30} onClick={() => setActive(true)}/>
-     
+            <Icon icon="ph:confetti"   />
+         </IconButton>
 
     </div>
   );

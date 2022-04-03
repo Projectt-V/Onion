@@ -16,9 +16,6 @@ function TextField(props) {
       color: theme.fontcolor
   };
 
-
-
-  
   return(
      <input type={props.type} placeholder = {props.placeholder} style={textStyle} />
   );

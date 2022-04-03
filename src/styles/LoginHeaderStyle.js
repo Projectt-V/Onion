@@ -10,7 +10,7 @@ export const HeaderContainer = styled.div`
   display: grid;
   grid-template-columns: 25vw 50vw 25vw;
   grid-template-rows: auto;
-  
+  box-shadow: 0px 4px 16px 10px rgba(150, 150, 150, 0.25);
 `;
 
 

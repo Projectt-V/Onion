@@ -5,12 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-   
+  
+ 
 }
 
 ::-webkit-scrollbar {
@@ -18,7 +21,7 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-  background: #666666;
+  background: transparent;
   border-radius: 10px;
   
 }
@@ -26,9 +29,12 @@ code {
 ::-webkit-scrollbar-thumb {
   background: #ADADAD;
   border-radius: 10px;
+
   
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #545655;
+  background: #969696;
+ 
+  
 }

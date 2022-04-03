@@ -31,7 +31,7 @@ function SignupPage() {
                         <Typist>
                          <Typist.Delay ms={300} />
                             Welcome to onion
-                        <Typist.Delay ms={100} />
+                        <Typist.Delay ms={50} />
                         <br />
                             Hope this onion will never make you to cry...
                         </Typist>

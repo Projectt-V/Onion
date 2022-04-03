@@ -25,7 +25,7 @@ function LoginPage(props) {
     return (
 
         <LoginScreen>
-            <LoginHeader />
+            
             <LoginBody>
                 <LoginContainer>
                     <LoginSignupHeader>Login For <br/> <Logo width="200px" height="80px" /></LoginSignupHeader>
@@ -38,7 +38,7 @@ function LoginPage(props) {
                         <TextField type={"password"} placeholder={"Password"} />
                     </TextDiv>
                     <ForgotPass>Forgot Password?</ForgotPass>
-                    <WidthFixer  onClick={ () => history.push("/home") }>
+                    <WidthFixer  onClick={ () => { history.push("/home"); window.location.reload(); } } >
                         <Button text="Login" isPrimary={true} />
                     </WidthFixer>
                     <WidthFixer onClick={ () => history.push("/signup") } >

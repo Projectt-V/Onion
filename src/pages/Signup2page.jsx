@@ -12,7 +12,7 @@ import { useHistory } from 'react-router-dom';
 
 function Signup2Page() {
     useEffect(() => {
-        Aos.init({ duration: 1000 });
+        Aos.init({ duration: 500 });
      }, []);
 
     const history = useHistory();
@@ -25,7 +25,7 @@ function Signup2Page() {
            <SignupHeader/>  
               <SignupContainer>
                
-                <SignupBox data-aos="fade-up" data-aos-delay="100">
+                <SignupBox data-aos="fade-up" >
                     <div >
                     <Label>Password</Label>
                     <TextDiv>

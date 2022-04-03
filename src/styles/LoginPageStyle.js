@@ -4,7 +4,7 @@ export const LoginScreen = styled.div`
    height: 100%;
    width: 100%;
    display: grid;
-   grid-template-rows: 9vh 91vh;
+   grid-template-rows: 91vh;
    grid-template-columns: auto;
 `;
 
@@ -24,7 +24,7 @@ export const LoginContainer = styled.div`
    border-radius: 10px;
    text-align: center;  
    color: ${(props) => props.theme.loginHeader};
-   box-shadow: 0 32px 16px rgba(0,0,0,0.21);
+   box-shadow: 10px 10px 100px 5px rgba(33, 32, 32, 0.25);
 
 
    @media (max-width: 425px) {

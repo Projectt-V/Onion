@@ -5,17 +5,20 @@ export const PostDivStyle = styled.div`
    width: 100%;
    color: ${ (props) => props.theme.fontcolor };
    margin-bottom: 10px;
-
+  
+  
 `;
 
 export const PostHeader = styled.div`
    background-color: transparent;
-   width: 100%;
+   
    height: 9%;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 10px 0px 10px;
+   padding-left:2%;
+   
+   padding-bottom:10px; 
 `;
 
 export const PostProfile = styled.div`
@@ -23,8 +26,9 @@ export const PostProfile = styled.div`
    flex-direction:row;
    justify-content: space-between;
    align-items:center;
-   margin-left: 2%;
+  
    height: 100%;
+   position: static;
 `;
 export const ProfileNameContainer = styled.div`
   display:flex;
@@ -40,6 +44,7 @@ export const PostProfileName = styled.h4`
    font-style: normal;
    font-weight: bold;
    cursor:pointer;
+   margin-right: 10px;
 `;
 export const PostTime = styled.p`
    font-style: normal;
@@ -60,6 +65,8 @@ export const PostFooter = styled.div`
    display: flex;
    align-items: center;
    justify-content: space-between;
+   margin-top: 10px;
+   margin-bottom: 10px;
 `;
 export const PostLikeSection = styled.div`
    display: flex;
@@ -75,7 +82,6 @@ export const PostCommentSection = styled.h4`
    font-weight: bold;
    margin-left:2%;
    letter-spacing:.5px;
-   cursor:pointer;
 `;
 export const PostCommentViewmore = styled.h5`
    margin-top:1%;
@@ -89,7 +95,7 @@ export const PostCommentViewmore = styled.h5`
 export const PostCommentBoxSection = styled.div`
   height: 40px;
   padding-left:2%;
-  padding-right:2%;
+  padding-right:2%; 
   padding-bottom:1%;
 `;
 export const PostCommentBox = styled.div`
