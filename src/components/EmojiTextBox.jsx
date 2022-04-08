@@ -9,7 +9,7 @@ import { useTheme } from 'styled-components';
 
 function EmojiTextBox(props) {
 
-    const [text, setText] = useState("");
+    const [text, setText] = useState(props.value);
     const [showEmo, setShowEmo] = useState(false);
     const theme = useTheme();
 
@@ -64,10 +64,10 @@ function EmojiTextBox(props) {
         <EmojiTextContainer>
             <EmojiText>
                 <Icon icon="fluent:emoji-20-regular" style={cmdiconStyle} onClick={emojiToggler} />
-                <input id="iptext" type="text" placeholder="Add a comment" style={textStyle} value={text} onChange={(e) => setText(e.target.value)} />
+                <input id="iptext" type="text" placeholder={props.placeHolder} style={textStyle} value={text} onChange={(e) => setText(e.target.value)} />
                 <EmojiTextBoxRight>
                     {props.isMicEnabled ? <Icon icon="fluent:mic-48-regular" style={cmdiconStyle} /> : <p></p>}
-                    <Icon icon="fluent:send-20-filled" style={cmdiconStyle} onClick={() => console.log(text)} />
+                    {props.isSendButtonEnabled ? <Icon icon="fluent:send-20-filled" style={cmdiconStyle} onClick={() => console.log(text)} /> : <p></p>}
                 </EmojiTextBoxRight>
             </EmojiText>
             <div style={EmoContStyle} >

@@ -2,19 +2,19 @@ import styled from 'styled-components';
 
 export const Editable = styled.table`
    margin-top: 20px;
-   width: 60%; 
+   width: 70%; 
 `;
 
 export const EditableRow = styled.tr`
     margin-top: 10px;
-    padding: 50px;
+    
 `;
 
 export const EditableRowTitle = styled.td`
    font-size: 20px;
    font-weight: 200px;
    font-color: black;
-   padding: 20px;
+   padding: 10px;
 `;
 
 export const EditableRowComps = styled.td`
@@ -24,7 +24,7 @@ export const EditableRowComps = styled.td`
 `;
 
 export const AutoGraph = styled.textarea`\
-    width: 100%;
+    width: 93%;
     background-color: #E8E8E8;
     height: 250px;
     border-radius: 10px;

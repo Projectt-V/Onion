@@ -1,9 +1,10 @@
 import React from 'react'
 import { Editable, EditableRow, EditableRowTitle, EditableRowComps, AutoGraph } from '../styles/SettingsPageStyle';
+import EmojiTextBox from '../components/EmojiTextBox';
 
 function SettingsForm() {
     const TextStyle = {
-        width: "100%",
+        width: "97%",
         height: "20px",
         padding: "2px",
         border: "none",
@@ -19,7 +20,7 @@ function SettingsForm() {
                     UserName:
                 </EditableRowTitle>
                 <EditableRowComps>
-                    <input type="text" style={TextStyle} />
+                    <EmojiTextBox isSendButtonEnabled={false} isMicEnabled = {false} value="jeni_reo" />
                 </EditableRowComps>
             </EditableRow>
             <EditableRow>
