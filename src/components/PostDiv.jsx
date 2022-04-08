@@ -133,7 +133,7 @@ function PostDiv(props) {
                 <p style={{ cursor:"pointer" }}>Blasted by i_am_akash_babu and 4,508 others </p>
             </PostCommentSection>
             <PostCommentViewmore>View All Comments more..</PostCommentViewmore>
-            <EmojiTextBox isMicEnabled={true}/>
+            <EmojiTextBox isMicEnabled={true} value="" isSendButtonEnabled={true} placeHolder = "Add a Comment" />
         </PostDivStyle>
     );
 }  
