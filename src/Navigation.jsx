@@ -10,6 +10,8 @@ import BottomNavigator from './components/BottomNavigator';
 import LoginHeader from './components/LoginHeader';
 import NotificationPage from "./pages/NotificationPage";
 import ProfilePage from "./pages/ProfilePage";
+import SettingsPage from './pages/SettingsPage';
+import { Settings } from "@material-ui/icons";
 
 
 function Navigation() {
@@ -50,6 +52,9 @@ function Navigation() {
                 <Route path={"/notification"} ><NotificationPage /></Route>
 
                 <Route path={"/profile"} ><ProfilePage /></Route>
+
+                <Route path={"/settings"} ><SettingsPage /></Route>
+
 
 
             </Switch>

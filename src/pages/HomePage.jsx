@@ -8,7 +8,6 @@ import MessageBoxHeader from '../components/MessageBoxHeader';
 
 
 function HomePage() {
-  
 
   return (
     <HomeStyle>

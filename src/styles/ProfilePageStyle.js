@@ -116,6 +116,14 @@ export const BioDivRight = styled.div`
 `;
 
 
+export const EditButton = styled.div`
+   width: 100px;
+   height: 100px;
+   background-color: pink;
+   
+`;
+
+
 export const MessageBody = styled.div`
    width: 100%;
    height: 100%;
